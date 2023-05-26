@@ -1,0 +1,832 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img [src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+  display: none;
+
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px  #212121 inset;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+  
+}
+input:-webkit-autofill::first-line{
+  font-size: 20px;
+  font-weight: 500;
+
+}
+/*---------------PAGINA INDEX PRINCIPAL-----------------*/
+
+.p{
+  font-size: 25px;
+}
+
+.body-menu{
+  background-image:url(../img/index_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.cabeçalho{
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 20px;
+
+}
+
+.sec-menu{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 75%;
+height: 550px;
+border-radius: 20px;  
+}
+
+.sec-menu .sec-filho{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border: 2px solid black;
+  color: black;
+  border-radius: 20px 0 0 20px;
+  background: linear-gradient(0deg, rgba(177,150,107,1) 0%, rgba(193,171,132,1) 45%, rgba(247,241,217,1) 100%);
+  
+  
+  backdrop-filter: blur(10px);
+}
+.sec-menu .sec-irmao{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: calc(100% - 50%);
+  height: 100%;
+  border-radius: 0px 20px 20px 0;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+}
+  .cabeça{
+    left: 50%;
+    transform: translate(-50%);
+    color: #ffffff;
+    bottom: 20vh;
+    z-index: 1;
+    position: relative;
+    font-size: 25px;
+    border-bottom: 1px solid gray;
+  }
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*------------PAGINA MENU PRINCIPAL-----------------*/
+
+.sec-pg-menu{
+  width: 80vw;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+.sec-pg{
+  width: 100%;
+}
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*--------INPUTS PAGINA DE LOGIN-------*/
+.form-login-sign  .input-box{
+  position: relative;
+  left: 5vw;
+  width:25vw;
+  height: 50px;
+  border-bottom: 2px solid white;
+  margin: 38px;
+} 
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  padding-right: 28px;
+}
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  pointer-events: none;
+  transition: .5s ease;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+  top: -5px;
+}
+.input-box .icon{
+  position: absolute;
+  right: 0;
+  color: white;
+  font-size: 25px;
+}
+.sec-filho .logo{
+  display: flex;
+  position: absolute;
+  width: auto;
+  top: 2vh;
+  left: 18vw;
+
+
+}
+.sec-filho .testo{
+  display: flex; 
+  width: 70%;
+  position: absolute;
+  font-size: 25px;
+  top: 40vh;
+  word-break: break-word;
+} 
+
+label{
+  padding: 10px;
+  font-size: 15px;
+}
+
+/*BOTÃO ENVIAR INDEX*/
+.btn{
+  position: absolute;
+  width: 24vw;
+  height: 50px;
+  left: 2vw;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn:hover {
+  color: #000000;
+  background-color: #1A1A1A;
+  box-shadow: rgb(0, 0, 0) 0 8px 15px;
+  transform: translateY(-2px);
+  background-color: #76777B;
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*CADASTRO DAS TURAMAS*/
+.sele_turma{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 18vh;
+  height: 40px;
+  width: 13vw;
+  font-size: 20px;
+  padding-left: 45px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  }
+
+.inp-turma{
+  position: relative;
+  top: 0;
+  right: 15vw;
+  width: 25vw;
+  height: 50px;
+  border-bottom: 2px solid gray;
+  margin: 30px;
+} 
+.inp-turma input{
+  width: 100%;
+  height: 90%;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  padding-right: 28px;
+}
+.inp-turma label{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 20px;
+  pointer-events: none;
+  transition: .5s ease;
+}
+.inp-turma input:focus~label,
+.inp-turma input:valid~label{
+  top: -15px;
+}
+.div-cad-turma{
+  width:70vw;
+  height: 70vh;
+  border: 1px solid black;
+  border-radius: 30px;
+  column-gap: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:#212121;
+}
+.div-cad-turma .X-lateral-turma{
+  position: absolute;
+  top: 3vh;
+  right: 3vw;
+  z-index: 1;
+  font-size: xx-large;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.cabeça-turma{
+  color: #ffffff;
+  bottom: 20vh;
+  z-index: 1;
+  position: relative;
+  font-size: 25px;
+  border-bottom: 1px solid gray;
+}
+
+.sec-btn-turma{
+  position:absolute;
+  top:55vh;
+  left:10vw;
+  display:flex;
+  flex-direction:row;
+  column-gap:10vw;
+}
+
+.btn-cad-turma{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50vh;
+  left: 10vw;
+  column-gap: 10vw;
+}
+.btn-turma{
+  width: 20vw;
+  height: 50px;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+.btn-turma:disabled{
+  pointer-events: none;
+}
+.btn-turma:hover{
+  color: #ffffff;
+  background-color: #1A1A1A;
+  box-shadow: rgb(0, 0, 0) 0 8px 15px;
+  transform: translateY(-2px);
+  background-color: #76777B;
+}
+.btn-turma:active{
+  box-shadow: none;
+  transform: translateY(0);
+}
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+  /*---------CADASTRO DOS PROFESSORES----------*/
+  .sec-cad-1{
+    position: relative;
+    width:25vw ;
+    height: 30px;
+    border-bottom: 2px solid gray;
+  } 
+  .sec-cad-prof{
+    width:70vw;
+    height: 65vh;
+    border: 1px solid black;
+    border-radius: 30px;
+    column-gap: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212121;
+    
+  }
+  .sec-cad-1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6vh;
+  }
+  .inp-cad-prof{
+    margin-top: 20vh;
+    font-size: 15px;
+  }
+  
+  .sec-inp1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14vh;
+    top: 20vh;
+    left: 0;
+    margin: 5vw; 
+  }
+  .sec-inp2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14vh;
+    top: 20vh;
+    right: 0;
+    margin: 5vw;
+  }
+/*IPUT CAD PROFE*/
+.sec-cad-1 input{
+  width: 100%;
+  height: 90%;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  padding-right: 28px;
+}
+.sec-cad-1 label{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 20px;
+  pointer-events: none;
+  transition: .5s ease;
+}
+.sec-cad-1 input:focus~label,
+.sec-cad-1 input:valid~label{
+  top: -15px;
+}
+/*BTN MODAL CAD PROFE*/
+
+.sec-btn-cad{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 15vw;
+  position: absolute;
+  top: 25vh;
+  left: -14vw;
+
+}
+
+.btn-cad-prof{
+  width: 20vw;
+  height: 50px;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.btn-cad-prof:disabled {
+  pointer-events: none;
+}
+
+.btn-cad-prof:hover {
+  color: #ffffff;
+  background-color: #1A1A1A;
+  box-shadow: rgb(0, 0, 0) 0 8px 15px;
+  transform: translateY(-2px);
+  background-color: #76777B;
+}
+
+.btn-cad-prof:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*CADASTRO DE VEICULOS */
+.div_veiculo{
+width:70vw;
+height: 65vh;
+border: 1px solid black;
+border-radius: 30px;
+column-gap: 10vw;
+display: flex;
+align-items: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color:#212121;
+}
+.div_veiculo .X-lateral-vei{
+position: absolute;
+top: 3vh;
+right: 3vw;
+z-index: 1;
+font-size: xx-large;
+border-radius: 50px;
+cursor: pointer;
+}
+.sec-btn-vei{
+display: flex;
+flex-direction: row;
+position: absolute;
+top: 50vh;
+left: 10vw;
+column-gap: 10vw;
+}
+.btn-vei{
+width: 20vw;
+height: 50px;
+appearance: none;
+background-color: transparent;
+border: 2px solid #000000;
+border-radius: 15px;
+box-sizing: border-box;
+color: #ffffff;
+cursor: pointer;
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+outline: none;
+text-align: center;
+text-decoration: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+will-change: transform;
+}
+.btn-vei:disabled{
+pointer-events: none;
+}
+.btn-vei:hover{
+color: #ffffff;
+background-color: #1A1A1A;
+box-shadow: rgb(0, 0, 0) 0 8px 15px;
+transform: translateY(-2px);
+background-color: #76777B;
+}
+.btn-vei:active{
+box-shadow: none;
+transform: translateY(0);
+}
+.cabeça-vei{
+  color: #ffffff;
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 25px;
+  border-bottom: 1px solid gray;
+}
+.sec-inp-vei{
+  position: absolute;
+  display: flex;
+  top: 25vh;
+  left: 20vw;
+}
+.sec-cad-vei{
+display: flex;
+flex-direction: column;
+row-gap: 6vh;
+}
+.sec-cad-vei{
+position: relative;
+top: 0;
+right: 15vw;
+width: 25vw;
+height: 50px;
+border-bottom: 2px solid gray;
+margin: 30px;
+} 
+.sec-cad-vei input{
+width: 100%;
+height: 90%;
+background: transparent;
+outline: none;
+border: none;
+font-size: 20px;
+color: rgb(255, 255, 255);
+font-weight: 500;
+padding-right: 28px;
+}
+.sec-cad-vei label{
+position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+color: rgb(255, 255, 255);
+font-weight: 500;
+font-size: 20px;
+pointer-events: none;
+transition: .5s ease;
+}
+.sec-cad-vei input:focus~label,
+.sec-cad-vei input:valid~label{
+top: -15px;
+}
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*=============================================================================================*/
+/*CADASTRO DE ATIVIDADES */
+
+.btn-atv{
+  width: 20vw;
+  height: 50px;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  }
+  
+  .btn-atv:disabled {
+  pointer-events: none;
+  }
+  
+  .btn-atv:hover {
+  color: #ffffff;
+  background-color: #1A1A1A;
+  box-shadow: rgb(0, 0, 0) 0 8px 15px;
+  transform: translateY(-2px);
+  background-color: #76777B;
+  
+  }
+  
+  .btn-atv:active {
+  box-shadow: none;
+  transform: translateY(0);
+  }
+  .sec-btn-atv{
+  display: flex;
+  column-gap: 10vw;
+  position: absolute;
+  top: 55vh;
+  left: 10vw;
+  }
+  /*=============BOTÃO CONSULTA============*/
+  
+  .linkar {
+    font-weight: 600;
+    color: rgb(255, 250, 250);
+    display: contents;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+    background-color: rgba(214, 206, 206, 0.055);
+}
+
+.linkar:hover {
+    background-color: black;
+    color: (0,0,255,1);
+    box-shadow: inset 0 0 0 3px;
+}
+
+.linkar2 {
+    font-weight: 600;
+    color: rgb(255, 250, 250);
+    display: contents;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+    background-color: rgba(214, 206, 206, 0.055);
+}
+
+.linkar2:hover {
+
+    background-color: black;
+    color:red;
+    box-shadow: inset 0 0 0 3px;
+}
+
+    /*=============================================================================================*/
+    /*=============================================================================================*/
+    /*=============================================================================================*/
+    /*=============================================================================================*/
+    /*CADASTRO DE ATIVIDADES */
+    .inp_vei {
+      height: 20px;
+      width: 13vw;
+      position: absolute;
+      top: 6vh;
+      border: 2px solid black;
+  }
+
+  .X-lateral-atv {
+      position: absolute;
+      top: 3vh;
+      right: 3vw;
+      z-index: 1;
+      font-size: xx-large;
+      border-radius: 50px;
+      cursor: pointer;
+  }
+
+  .div-atv {
+      width: 70vw;
+      height: 65vh;
+      border: 1px solid black;
+      border-radius: 30px;
+      column-gap: 10vw;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #212121;
+  }
+
+  .select {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      height: 40px;
+      width: 13vw;
+      font-size: 20px;
+      padding-left: 10px;
+      border: 2px solid black;
+      border-radius: 5px;
+      text-decoration: none;
+  }
+
+  .selectt {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      width: 13vw;
+      font-size: 20px;
+      padding-left: 16px;
+      border: 2px solid black;
+      border-radius: 5px;
+  }
+
+  .seletores {
+      display: flex;
+      flex-direction: row;
+      column-gap: 5vw;
+      position: absolute;
+      top: 20vh;
+      left: 20vw;
+  }
+  
+  .txtarea {
+      border: 2px solid black;
+      overflow: auto;
+      resize: none;
+      position: absolute;
+      right: 15vw;
+      left: 15vw;
+      padding: 10px;
+      max-width: 100%;
+      border-radius: 5px;
+  }
+
+  input[type="date"] {
+      background-color: #BFC0BA;
+      padding: 4px;
+      position: absolute;
+      height: 27px;
+      top: 20vh;
+      left: 5vw;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      outline: none;
+      border-radius: 5px;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+      background-color: #ffffff;
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 3px;
+  }
+  .btnV{
+    border: none;
+    color: #ffffff ;
+    background-color: rgba(214, 206, 206, 0.233);
+  }
+  .btnV:hover{
+    font-weight: 600;
+    background-color: #ffffff;
+    border: #000000;
+    color:black ;
+  }

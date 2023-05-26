@@ -1,0 +1,265 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+img [src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+  display: none;}
+body {
+  background-image: url(../img/black.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: relative;
+  top: 7%;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+select {
+  height: 40px;
+  width: 18vw;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 55px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/*============================================*/
+/*===========CSS PAGINA DE EDIÇÃO PROF=============*/
+
+.sec-edit {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 11%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 70%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: #212121;
+}
+
+.div-edit {
+  position: relative;
+  top: 8vh;
+  width: 25vw;
+  height: 30px;
+  border-bottom: 2px solid gray;
+}
+
+.div-edit {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6vh;
+}
+
+.div-edit input {
+  width: 100%;
+  height: 90%;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  padding-right: 28px;
+}
+
+.div-edit label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 20px;
+  pointer-events: none;
+  transition: .5s ease;
+}
+
+.div-edit input:focus~label,
+.div-edit input:valid~label {
+  top: -15px;
+}
+
+.sec-btn {
+  position: absolute;
+  top: 85%;
+
+}
+
+.btn {
+  width: 20vw;
+  height: 50px;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #1A1A1A;
+  box-shadow: rgb(0, 0, 0) 0 8px 15px;
+  transform: translateY(-2px);
+  background-color: #76777B;
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #212121 inset;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+
+}
+
+input:-webkit-autofill::first-line {
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+/*======================= EDIÇÃO DE CADASTRO DE ATIVIDADE==============================*/
+.btn-EDIT {
+  position: absolute;
+  bottom: 5vh;
+  width: 20vw;
+  height: 50px;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.btn-EDIT:disabled {
+  pointer-events: none;
+}
+
+.btn-EDIT:hover {
+  color: #ffffff;
+  background-color: #1A1A1A;
+  box-shadow: rgb(0, 0, 0) 0 8px 15px;
+  transform: translateY(-2px);
+  background-color: #76777B;
+}
+
+.btn-EDIT:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.sec-g .testo {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+.data {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+
+input[type="date"] {
+  background-color: #BFC0BA;
+  padding: 4px;
+  height: 27px;
+  color: black;
+  font-size: 18px;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 5px;
+}
+
+.nome {
+  position: absolute;
+  top: 16vh;
+  left: 5vw;
+}
+
+.sec-duo {
+  position: absolute;
+  top: 23%;
+  left: 73%;
+  transform: translate(-50%);
+
+}
+
+.sec_tres {
+  position: absolute;
+  top: 45%;
+  left: 73%;
+  transform: translate(-50%);
+}
+
+/*====input-====*/
+.inp_cor {
+  position: absolute;
+  left: 0;
+  top: 5vh;
+  height: 30px;
+  width: 61%;
+  font-size: 18px;
+}
+
+.inp_peri {
+  position: absolute;
+  left: 0;
+  top: 5vh;
+  height: 30px;
+  width: 61%;
+  font-size: 18px;
+
+}
